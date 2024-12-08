@@ -20,9 +20,9 @@ const services = [
   },
   {
     num: "03",
-    title: "Full Stack",
+    title: "SEO Optimization",
     description:
-      "Developing Full Stack apps with Next.js or the MERN stack (MongoDB, Express, React, Node.js).",
+      "A project focused on improving website visibility and ranking on search engines.",
     href: "",
   },
   {

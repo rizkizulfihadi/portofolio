@@ -14,9 +14,9 @@ export default {
 	},
 	screens: {
 		sm: "640px",
-		md: "768",
-		lg: "960",
-		xl: "1200"
+		md: "768px",
+		lg: "960px",
+		xl: "1200px"
 	},
 	fontFamily: {
 		primary: "var(--font-jetbrainsMono)",

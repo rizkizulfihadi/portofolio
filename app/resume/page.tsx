@@ -9,17 +9,26 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiPrisma,
+  SiPostgresql,
+  SiMongodb,
+  SiExpress,
+  SiPhp,
+} from "react-icons/si";
 
 // about data
 const about = {
   title: "About Me",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis corporis doloribus dolore eius distinctio.",
+    "I am a passionate software developer, with a focus on JavaScript and web development. Through various projects and internships, I have gained practical experience that helps me continuously refine my skills in creating innovative solutions. I am eager to contribute and grow in the tech industry.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Luke Coleman",
+      fieldValue: "Rizki Zulfihadi",
     },
     {
       fieldName: "Phone",
@@ -30,8 +39,8 @@ const about = {
       fieldValue: "3+ Years",
     },
     {
-      fieldName: "Skype",
-      fieldValue: "like.01",
+      fieldName: "Github",
+      fieldValue: "github.com/rizkizulfihadi",
     },
     {
       fieldName: "Nationality",
@@ -39,15 +48,15 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "luke.01@gmail.com",
+      fieldValue: "rizkizulfihadi17@gmail.com",
     },
     {
-      fieldName: "Freelance",
-      fieldValue: "Available",
+      fieldName: "Job",
+      fieldValue: "Looking for work",
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, Indonesia",
+      fieldValue: "Indonesia, English",
     },
   ],
 };
@@ -57,37 +66,17 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis corporis doloribus dolore eius distinctio.",
+    "These are the experiences that have helped me develop my skills in web development and communication.",
   items: [
     {
-      company: "Tech Solution Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "Pusdiklat Kadin",
+      position: "Web Developer Intern",
+      duration: "2024",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
-    },
-    {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
-    },
-    {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
-    },
-    {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
+      company: "Himakom",
+      position: "Communication and Information Division",
+      duration: "2022 - 2024",
     },
   ],
 };
@@ -97,37 +86,27 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My Education",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis corporis doloribus dolore eius distinctio.",
+    "I have an educational background focused on computer technology and software development program courses.",
   items: [
     {
-      company: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      company: "Politeknik Pajajaran",
+      degree: "Diploma in Technology Computer",
+      duration: "2021 - 2024",
     },
     {
-      company: "Codecademy",
-      degree: "Frontend track",
-      duration: "2022",
+      company: "Inform IT",
+      degree: "Fullstack Development with React",
+      duration: "2017 - 2019",
     },
     {
-      company: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
+      company: "Online Course Udemy",
+      degree: "React The Complete Guide 2024",
+      duration: "2024",
     },
     {
-      company: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
-    },
-    {
-      company: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018",
-    },
-    {
-      company: "Community College",
-      degree: "Association Degree in Computer Science",
-      duration: "2014 - 2016",
+      company: "Smkn 7 Baleendah",
+      degree: "Rekayasa Perangkat Lunak",
+      duration: "2017 - 2019",
     },
   ],
 };
@@ -136,7 +115,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis corporis doloribus dolore eius distinctio.",
+    "Here are some of the skills I have learned for software development, with a focus on JavaScript technology.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -151,20 +130,44 @@ const skills = {
       name: "javascript",
     },
     {
-      icon: <FaReact />,
-      name: "react.js",
+      icon: <SiTypescript />,
+      name: "typescript",
+    },
+    {
+      icon: <SiPhp />,
+      name: "Php",
+    },
+    {
+      icon: <FaNodeJs />,
+      name: "node.js",
+    },
+    {
+      icon: <SiExpress />,
+      name: "express.js",
     },
     {
       icon: <SiNextdotjs />,
       name: "next.js",
     },
     {
+      icon: <FaReact />,
+      name: "react.js",
+    },
+    {
       icon: <SiTailwindcss />,
       name: "tailwind.css",
     },
     {
-      icon: <FaNodeJs />,
-      name: "node.js",
+      icon: <SiMongodb />,
+      name: "mongo db",
+    },
+    {
+      icon: <SiPostgresql />,
+      name: "postgre sql",
+    },
+    {
+      icon: <SiPrisma />,
+      name: "prisma",
     },
     {
       icon: <FaFigma />,
@@ -215,26 +218,24 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {experience.items.map((item, index) => (
-                      <li
-                        key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                      >
-                        <span className="text-accent">{item.duration}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                          {item.position}
-                        </h3>
-                        <div className="flex items-center gap-3">
-                          {/* dot */}
-                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                          <p className="text-white/60">{item.company}</p>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollArea>
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                  {experience.items.map((item, index) => (
+                    <li
+                      key={index}
+                      className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                    >
+                      <span className="text-accent">{item.duration}</span>
+                      <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                        {item.position}
+                      </h3>
+                      <div className="flex items-center gap-3">
+                        {/* dot */}
+                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                        <p className="text-white/60">{item.company}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </TabsContent>
             {/* education */}
@@ -244,30 +245,28 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {education.items.map((item, index) => (
-                      <li
-                        key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                      >
-                        <span className="text-accent">{item.duration}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                          {item.degree}
-                        </h3>
-                        <div className="flex items-center gap-3">
-                          {/* dot */}
-                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                          <p className="text-white/60">{item.company}</p>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollArea>
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                  {education.items.map((item, index) => (
+                    <li
+                      key={index}
+                      className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                    >
+                      <span className="text-accent">{item.duration}</span>
+                      <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                        {item.degree}
+                      </h3>
+                      <div className="flex items-center gap-3">
+                        {/* dot */}
+                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                        <p className="text-white/60">{item.company}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </TabsContent>
             {/* skills */}
-            <TabsContent value="skills" className="w-full">
+            <TabsContent value="skills" className="w-full mb-10">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
@@ -275,24 +274,26 @@ const Resume = () => {
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => (
-                    <li key={index}>
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                              {skill.icon}
-                            </div>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p className="capitalize">{skill.name}</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </li>
-                  ))}
-                </ul>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.skillList.map((skill, index) => (
+                      <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                {skill.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="capitalize">{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
             {/* about */}

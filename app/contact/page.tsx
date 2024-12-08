@@ -4,16 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const info = [
@@ -25,12 +15,12 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "youremail@gmail.com",
+    description: "rizkizulfihadi17@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Code Corner, Tech Town 13579",
+    description: "Kp Cipicung RT 04 RW 01, Kab.Bandung",
   },
 ];
 
@@ -55,8 +45,8 @@ const Contact = () => {
                 Let&apos;s work together{" "}
               </h3>
               <p className="text-white/60">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
-                asperiores, expedita iusto nihil sint eum ipsa eveniet.
+                I believe that collaboration and innovation can lead to greater
+                results.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -65,21 +55,6 @@ const Contact = () => {
                 <Input type="email" placeholder="Email" />
                 <Input type="phone" placeholder="Phone" />
               </div>
-              {/* select */}
-              <Select>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est1">Web Development</SelectItem>
-                    <SelectItem value="est2">UI/UX Design</SelectItem>
-                    <SelectItem value="est3">Logo Design</SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
-              {/* textarea */}
               <Textarea
                 className="h-[200px]"
                 placeholder="Type your message here."

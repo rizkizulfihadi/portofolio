@@ -6,30 +6,30 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Frontend",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illum consectetur fugit temporibus.",
+      "Creating responsive and interactive web interfaces with React to build web modern.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Backend",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illum consectetur fugit temporibus.",
+      "Building RESTful APIs with Node.js and Express.js, using PostgreSQL and MongoDB for data management.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "Full Stack",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illum consectetur fugit temporibus.",
+      "Developing Full Stack apps with Next.js or the MERN stack (MongoDB, Express, React, Node.js).",
     href: "",
   },
   {
     num: "04",
-    title: "SEO Optimization",
+    title: "UI Design",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illum consectetur fugit temporibus.",
+      "Designing wireframes, prototypes, and interfaces with Figma for optimal user experience and responsive design.",
     href: "",
   },
 ];

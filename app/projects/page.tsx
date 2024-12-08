@@ -54,6 +54,7 @@ const projects = [
       { name: "Express.js" },
       { name: "React" },
       { name: "Node.js" },
+      { name: "Tailwind.css" },
     ],
     image: "/assets/project/project3.png",
     live: "",
@@ -131,7 +132,7 @@ const Work = () => {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stock */}
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 flex-wrap">
                 {project.stack.map((item, index) => (
                   <li key={index} className="text-xl text-accent">
                     {item.name}

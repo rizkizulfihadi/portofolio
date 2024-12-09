@@ -10,6 +10,7 @@ const services = [
     description:
       "Creating responsive and interactive web interfaces with React to build web modern.",
     href: "",
+    isActive: false,
   },
   {
     num: "02",
@@ -17,6 +18,7 @@ const services = [
     description:
       "Building RESTful APIs with Node.js and Express.js, using PostgreSQL and MongoDB for data management.",
     href: "",
+    isActive: true,
   },
   {
     num: "03",
@@ -24,6 +26,7 @@ const services = [
     description:
       "A project focused on improving website visibility and ranking on search engines.",
     href: "",
+    isActive: false,
   },
   {
     num: "04",
@@ -31,6 +34,7 @@ const services = [
     description:
       "Designing wireframes, prototypes, and interfaces with Figma for optimal user experience and responsive design.",
     href: "",
+    isActive: true,
   },
 ];
 
@@ -55,18 +59,28 @@ const Services = () => {
             >
               {/* top */}
               <div className="w-full flex justify-between items-center">
-                <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+                <div
+                  className={`text-5xl font-extrabold text-outline lg:group-hover:text-outline-hover text-transparent transition-all duration-500 ${
+                    service.isActive && "text-outline-hover lg:text-outline"
+                  }`}
+                >
                   {service.num}
                 </div>
                 <Link
                   href={service.href}
-                  className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45 "
+                  className={`w-[70px] h-[70px] rounded-full lg:group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45 ${
+                    service.isActive && "bg-accent lg:bg-white"
+                  }`}
                 >
                   <BsArrowDownRight className="text-primary text-3xl" />
                 </Link>
               </div>
               {/* title */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+              <h2
+                className={`text-[42px] font-bold leading-none  lg:group-hover:text-accent transition-all duration-500 ${
+                  service.isActive && "text-accent lg:text-white"
+                }`}
+              >
                 {service.title}
               </h2>
               {/* description */}

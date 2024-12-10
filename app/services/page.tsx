@@ -61,15 +61,15 @@ const Services = () => {
               <div className="w-full flex justify-between items-center">
                 <div
                   className={`text-5xl font-extrabold text-outline lg:group-hover:text-outline-hover text-transparent transition-all duration-500 ${
-                    service.isActive && "text-outline-hover lg:text-outline"
+                    service.isActive && "text-outline-hover md:text-outline"
                   }`}
                 >
                   {service.num}
                 </div>
                 <Link
                   href={service.href}
-                  className={`w-[70px] h-[70px] rounded-full bg-white lg:group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45 ${
-                    service.isActive && "bg-accent lg:bg-white"
+                  className={`w-[70px] h-[70px] rounded-full lg:group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45 ${
+                    service.isActive ? "bg-accent md:bg-white" : "bg-white"
                   }`}
                 >
                   <BsArrowDownRight className="text-primary text-3xl" />
@@ -78,7 +78,7 @@ const Services = () => {
               {/* title */}
               <h2
                 className={`text-[42px] font-bold leading-none  lg:group-hover:text-accent transition-all duration-500 ${
-                  service.isActive && "text-accent lg:text-white"
+                  service.isActive && "text-accent md:text-white"
                 }`}
               >
                 {service.title}

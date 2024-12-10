@@ -68,7 +68,7 @@ const Services = () => {
                 </div>
                 <Link
                   href={service.href}
-                  className={`w-[70px] h-[70px] rounded-full lg:group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45 ${
+                  className={`w-[70px] h-[70px] rounded-full bg-white lg:group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45 ${
                     service.isActive && "bg-accent lg:bg-white"
                   }`}
                 >

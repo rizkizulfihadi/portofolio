@@ -29,8 +29,8 @@ const projects = [
       "Redesign of the Politeknik Pajajaran website to improve its appearance and user experience.",
     stack: [{ name: "Html5" }, { name: "Css3" }, { name: "Javascript" }],
     image: "/assets/project/project1.png",
-    live: "",
-    github: "",
+    live: "https://rizkizulfihadi.github.io/web-template-poljan",
+    github: "https://github.com/rizkizulfihadi/web-template-poljan",
   },
   {
     num: "02",
@@ -40,8 +40,8 @@ const projects = [
       "Redesign of the LLDIKTI Region 4 website to make it more modern and responsive.",
     stack: [{ name: "Html5" }, { name: "Css3" }, { name: "Javascript" }],
     image: "/assets/project/project2.png",
-    live: "",
-    github: "",
+    live: "https://rizkizulfihadi.github.io/template-web-lldikti",
+    github: "https://github.com/rizkizulfihadi/template-web-lldikti",
   },
   {
     num: "03",
@@ -146,7 +146,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
@@ -159,7 +159,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project button */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
